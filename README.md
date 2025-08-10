@@ -1,14 +1,14 @@
 # BERT Sentiment Analysis App
 
-A Streamlit web application that uses BERT (Bidirectional Encoder Representations from Transformers) to analyze the sentiment of text input.
+A web application that uses BERT (Bidirectional Encoder Representations from Transformers) to analyze the sentiment of text input.
 
 ## Features
 
-- **Real-time sentiment analysis** using BERT model
-- **5-star rating system** (1-5 stars)
+- **Real-time sentiment analysis** using Auto model
+- **28 emotions** Classification
 - **Confidence scores** for each sentiment level
 - **User-friendly interface** with emoji indicators
-- **Multilingual support** (using multilingual BERT model)
+- **Multilingual support** 
 
 ## How to Use
 
@@ -16,18 +16,12 @@ A Streamlit web application that uses BERT (Bidirectional Encoder Representation
 2. Click "Analyze Sentiment" button
 3. View the predicted sentiment rating and confidence scores
 
-## Sentiment Ratings
 
-- ⭐⭐⭐⭐⭐ (5 stars): 🤩 Very Positive
-- ⭐⭐⭐⭐ (4 stars): 🙂 Positive  
-- ⭐⭐⭐ (3 stars): 😐 Neutral
-- ⭐⭐ (2 stars): 🙁 Negative
-- ⭐ (1 star): 😠 Very Negative
 
 ## Technical Details
 
 - **Model**: `nlptown/bert-base-multilingual-uncased-sentiment`
-- **Framework**: Streamlit
+- **Framework**: Flask for backend, React for frontend
 - **ML Library**: Transformers (Hugging Face)
 - **Deep Learning**: PyTorch
 
@@ -36,10 +30,10 @@ A Streamlit web application that uses BERT (Bidirectional Encoder Representation
 To run this app locally:
 
 ```bash
+#For python
 pip install -r requirements.txt
-streamlit run app.py
+python app.py
+#For React
+npm init -y
+npm start
 ```
-
-## Deployment
-
-This app is deployed on Streamlit Cloud and can be accessed at: [Your Streamlit Cloud URL will appear here after deployment] 
